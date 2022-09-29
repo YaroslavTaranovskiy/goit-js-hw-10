@@ -22,7 +22,7 @@ function onSearch(event) {
         if (r.length === 1) {
             renderMarkUp(r);
         }
-        if (r.length > 2 && r.length < 10) {
+        if (r.length > 2 && r.length <= 10) {
             renderCountriesList(r);
         }
         if (r.length > 10) {
