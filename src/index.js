@@ -30,7 +30,7 @@ function onSearch(event) {
         }
       
     }).catch(error => {
-            Notify.failure('Oops, there is no country with that name');
+        Notify.failure('Oops, there is no country with that name');
         });
   
       
