@@ -26,10 +26,14 @@ function onSearch(event) {
             renderCountriesList(r);
         }
         if (r.length > 10) {
+            countryList.innerHTML = '';
+            countryInfo.innerHTML = '';
             return Notify.info('Too many matches found. Please enter a more specific name.');
         }
       
     }).catch(error => {
+        countryList.innerHTML = '';
+        countryInfo.innerHTML = '';
         Notify.failure('Oops, there is no country with that name');
         });
   
